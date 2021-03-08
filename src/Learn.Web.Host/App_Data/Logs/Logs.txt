@@ -1,0 +1,167 @@
+DEBUG 2021-03-08 16:39:08,536 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2021-03-08 16:39:08,949 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2021-03-08 16:39:08,977 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Learn.Web.Host.Startup.LearnWebHostModule, Learn.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-03-08 16:39:08,979 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Learn.LearnWebCoreModule, Learn.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-03-08 16:39:08,980 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Learn.LearnApplicationModule, Learn.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-03-08 16:39:08,981 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Learn.LearnCoreModule, Learn.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-03-08 16:39:08,981 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-03-08 16:39:08,981 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-03-08 16:39:08,982 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=6.2.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-03-08 16:39:08,982 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-03-08 16:39:08,982 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Learn.EntityFrameworkCore.LearnEntityFrameworkModule, Learn.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-03-08 16:39:08,983 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-03-08 16:39:08,983 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-03-08 16:39:08,984 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-03-08 16:39:08,984 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-03-08 16:39:08,985 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-03-08 16:39:08,985 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-03-08 16:39:08,989 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2021-03-08 16:39:09,277 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2021-03-08 16:39:09,277 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2021-03-08 16:39:09,277 [1    ] o.Configuration.LanguageManagementConfig - Converted Learn (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2021-03-08 16:39:09,277 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+FATAL 2021-03-08 16:39:09,731 [1    ] Abp.AbpBootstrapper                      - System.TypeLoadException: Method 'Get' in type 'Abp.DynamicEntityProperties.DynamicEntityPropertyValueStore' from assembly 'Abp.Zero.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null' does not have an implementation.
+   at System.Reflection.RuntimeAssembly.GetExportedTypes()
+   at Castle.Core.Internal.ReflectionUtil.GetAvailableTypes(Assembly assembly, Boolean includeNonExported)
+   at Castle.Core.Internal.ReflectionUtil.GetAvailableTypesOrdered(Assembly assembly, Boolean includeNonExported)
+   at Castle.MicroKernel.Registration.FromAssemblyDescriptor.<SelectedTypes>b__5_0(Assembly a)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.MoveNext()
+   at Castle.MicroKernel.Registration.FromDescriptor.Castle.MicroKernel.Registration.IRegistration.Register(IKernelInternal kernel)
+   at Castle.MicroKernel.Registration.BasedOnDescriptor.Castle.MicroKernel.Registration.IRegistration.Register(IKernelInternal kernel)
+   at Castle.MicroKernel.DefaultKernel.Register(IRegistration[] registrations)
+   at Castle.Windsor.WindsorContainer.Register(IRegistration[] registrations)
+   at Abp.AspNetCore.AbpAspNetCoreConventionalRegistrar.RegisterAssembly(IConventionalRegistrationContext context)
+   at Abp.Dependency.IocManager.RegisterAssemblyByConvention(Assembly assembly, ConventionalRegistrationConfig config)
+   at Abp.Dependency.IocManager.RegisterAssemblyByConvention(Assembly assembly)
+   at Abp.Zero.AbpZeroCommonModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+System.TypeLoadException: Method 'Get' in type 'Abp.DynamicEntityProperties.DynamicEntityPropertyValueStore' from assembly 'Abp.Zero.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null' does not have an implementation.
+   at System.Reflection.RuntimeAssembly.GetExportedTypes()
+   at Castle.Core.Internal.ReflectionUtil.GetAvailableTypes(Assembly assembly, Boolean includeNonExported)
+   at Castle.Core.Internal.ReflectionUtil.GetAvailableTypesOrdered(Assembly assembly, Boolean includeNonExported)
+   at Castle.MicroKernel.Registration.FromAssemblyDescriptor.<SelectedTypes>b__5_0(Assembly a)
+   at System.Linq.Enumerable.SelectManySingleSelectorIterator`2.MoveNext()
+   at Castle.MicroKernel.Registration.FromDescriptor.Castle.MicroKernel.Registration.IRegistration.Register(IKernelInternal kernel)
+   at Castle.MicroKernel.Registration.BasedOnDescriptor.Castle.MicroKernel.Registration.IRegistration.Register(IKernelInternal kernel)
+   at Castle.MicroKernel.DefaultKernel.Register(IRegistration[] registrations)
+   at Castle.Windsor.WindsorContainer.Register(IRegistration[] registrations)
+   at Abp.AspNetCore.AbpAspNetCoreConventionalRegistrar.RegisterAssembly(IConventionalRegistrationContext context)
+   at Abp.Dependency.IocManager.RegisterAssemblyByConvention(Assembly assembly, ConventionalRegistrationConfig config)
+   at Abp.Dependency.IocManager.RegisterAssemblyByConvention(Assembly assembly)
+   at Abp.Zero.AbpZeroCommonModule.Initialize()
+   at Abp.Modules.AbpModuleManager.<>c.<StartModules>b__15_1(AbpModuleInfo module)
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at Abp.Modules.AbpModuleManager.StartModules()
+   at Abp.AbpBootstrapper.Initialize()
+DEBUG 2021-03-08 16:49:44,907 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2021-03-08 16:49:45,097 [1    ] Abp.Modules.AbpModuleManager             - Found 15 ABP modules in total.
+DEBUG 2021-03-08 16:49:45,117 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Learn.Web.Host.Startup.LearnWebHostModule, Learn.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-03-08 16:49:45,121 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Learn.LearnWebCoreModule, Learn.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-03-08 16:49:45,122 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Learn.LearnApplicationModule, Learn.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-03-08 16:49:45,122 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Learn.LearnCoreModule, Learn.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-03-08 16:49:45,123 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-03-08 16:49:45,123 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-03-08 16:49:45,123 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-03-08 16:49:45,124 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-03-08 16:49:45,124 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Learn.EntityFrameworkCore.LearnEntityFrameworkModule, Learn.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-03-08 16:49:45,125 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-03-08 16:49:45,125 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-03-08 16:49:45,125 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-03-08 16:49:45,126 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-03-08 16:49:45,126 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-03-08 16:49:45,126 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=5.13.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-03-08 16:49:45,130 [1    ] Abp.Modules.AbpModuleManager             - 15 modules loaded.
+DEBUG 2021-03-08 16:49:45,224 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2021-03-08 16:49:45,224 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2021-03-08 16:49:45,224 [1    ] o.Configuration.LanguageManagementConfig - Converted Learn (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2021-03-08 16:49:45,224 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2021-03-08 16:49:46,020 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Learn.EntityFrameworkCore.LearnDbContext, Learn.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2021-03-08 16:49:47,536 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2021-03-08 16:49:47,676 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2021-03-08 16:49:47,697 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2021-03-08 16:49:47,707 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Learn
+DEBUG 2021-03-08 16:49:47,718 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2021-03-08 16:49:48,064 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Castle.Proxies.BackgroundJobManagerProxy
+DEBUG 2021-03-08 16:49:48,277 [1    ] , Culture=neutral, PublicKeyToken=null]] - Start background worker: Abp.Authorization.Users.UserTokenExpirationWorker`2[[Learn.MultiTenancy.Tenant, Learn.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[Learn.Authorization.Users.User, Learn.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]
+DEBUG 2021-03-08 16:49:48,363 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 9 classes define auto mapping attributes
+DEBUG 2021-03-08 16:49:48,363 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Learn.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2021-03-08 16:49:48,372 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Learn.Users.Dto.CreateUserDto
+DEBUG 2021-03-08 16:49:48,373 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Learn.Users.Dto.UserDto
+DEBUG 2021-03-08 16:49:48,373 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Learn.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2021-03-08 16:49:48,373 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Learn.Sessions.Dto.UserLoginInfoDto
+DEBUG 2021-03-08 16:49:48,373 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Learn.Roles.Dto.PermissionDto
+DEBUG 2021-03-08 16:49:48,373 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Learn.Players.Dtos.PlayerDto
+DEBUG 2021-03-08 16:49:48,374 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Learn.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2021-03-08 16:49:48,374 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Learn.MultiTenancy.Dto.TenantDto
+INFO  2021-03-08 16:49:55,135 [1    ] tCore.Builder.RequestLocalizationOptions - Supported Request Localization Cultures: en,es-MX,fr,de,it,nl,pt-BR,tr,ru,ar,ja,zh-Hans
+INFO  2021-03-08 16:49:55,975 [1    ] taProtection.KeyManagement.XmlKeyManager - User profile is available. Using 'C:\Users\Dipen\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+INFO  2021-03-08 16:49:56,145 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2021-03-08 16:49:56,466 [15   ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Learn.Web.Host.Controllers.HomeController.Index (Learn.Web.Host)'
+INFO  2021-03-08 16:50:01,946 [15   ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "Index", controller = "Home", area = ""}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Index() on controller Learn.Web.Host.Controllers.HomeController (Learn.Web.Host).
+INFO  2021-03-08 16:50:03,941 [4    ] vc.Infrastructure.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2021-03-08 16:50:03,960 [4    ] c.Infrastructure.ControllerActionInvoker - Executed action Learn.Web.Host.Controllers.HomeController.Index (Learn.Web.Host) in 2000.04ms
+INFO  2021-03-08 16:50:03,965 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Learn.Web.Host.Controllers.HomeController.Index (Learn.Web.Host)'
+INFO  2021-03-08 16:50:04,010 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger  
+INFO  2021-03-08 16:50:04,014 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 7872.3468ms 302 
+INFO  2021-03-08 16:50:04,086 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 79.7277ms 301 
+INFO  2021-03-08 16:50:04,089 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/index.html  
+INFO  2021-03-08 16:50:04,153 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 62.1076ms 200 text/html;charset=utf-8
+INFO  2021-03-08 16:50:04,211 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.css  
+INFO  2021-03-08 16:50:04,213 [13   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-bundle.js  
+INFO  2021-03-08 16:50:04,217 [14   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui-standalone-preset.js  
+INFO  2021-03-08 16:50:04,222 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.swagger.js  
+INFO  2021-03-08 16:50:04,224 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.js  
+INFO  2021-03-08 16:50:04,632 [20   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+INFO  2021-03-08 16:50:04,636 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.swagger.js'. Physical path: 'C:\Users\Dipen\Desktop\Learn\aspnet-core\src\Learn.Web.Host\wwwroot\swagger\ui\abp.swagger.js'
+INFO  2021-03-08 16:50:04,638 [15   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'C:\Users\Dipen\Desktop\Learn\aspnet-core\src\Learn.Web.Host\wwwroot\swagger\ui\abp.js'
+INFO  2021-03-08 16:50:04,640 [17   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+INFO  2021-03-08 16:50:04,643 [5    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 426.0558ms 200 application/javascript
+INFO  2021-03-08 16:50:04,646 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 433.2616ms 200 application/javascript
+INFO  2021-03-08 16:50:04,656 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 455.2669ms 200 text/css
+INFO  2021-03-08 16:50:04,660 [17   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 445.2836ms 200 application/javascript
+INFO  2021-03-08 16:50:04,701 [4    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+INFO  2021-03-08 16:50:04,705 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 502.6749ms 200 application/javascript
+INFO  2021-03-08 16:50:04,970 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/AntiForgery/SetCookie  
+INFO  2021-03-08 16:50:04,977 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Learn.Web.Host.Controllers.AntiForgeryController.SetCookie (Learn.Web.Host)'
+INFO  2021-03-08 16:50:05,000 [4    ] c.Infrastructure.ControllerActionInvoker - Route matched with {action = "SetCookie", controller = "AntiForgery", area = ""}. Executing controller action with signature Void SetCookie() on controller Learn.Web.Host.Controllers.AntiForgeryController (Learn.Web.Host).
+INFO  2021-03-08 16:50:05,039 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2021-03-08 16:50:05,051 [20   ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2021-03-08 16:50:05,127 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 GET http://localhost:21021/swagger/favicon-32x32.png  
+INFO  2021-03-08 16:50:05,139 [15   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+INFO  2021-03-08 16:50:05,142 [15   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 23.3998ms 200 image/png
+INFO  2021-03-08 16:50:05,375 [20   ] c.Infrastructure.ControllerActionInvoker - Executed action Learn.Web.Host.Controllers.AntiForgeryController.SetCookie (Learn.Web.Host) in 369.2838ms
+INFO  2021-03-08 16:50:05,378 [20   ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Learn.Web.Host.Controllers.AntiForgeryController.SetCookie (Learn.Web.Host)'
+INFO  2021-03-08 16:50:05,385 [20   ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 410.8666ms 200 application/json; charset=utf-8
+INFO  2021-03-08 16:50:05,440 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 401.1955ms 200 application/json;charset=utf-8
+INFO  2021-03-08 16:51:24,537 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request starting HTTP/1.1 PUT http://localhost:21021/api/services/app/Player/Update application/json-patch+json 8
+INFO  2021-03-08 16:51:24,548 [4    ] pNetCore.Cors.Infrastructure.CorsService - CORS policy execution failed.
+INFO  2021-03-08 16:51:24,552 [4    ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2021-03-08 16:51:24,580 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executing endpoint 'Learn.Players.PlayerAppService.UpdateAsync (Learn.Application)'
+INFO  2021-03-08 16:51:24,607 [4    ] c.Infrastructure.ControllerActionInvoker - Route matched with {area = "app", action = "Update", controller = "Player"}. Executing controller action with signature System.Threading.Tasks.Task`1[Learn.Players.Dtos.PlayerDto] UpdateAsync(Learn.Players.Dtos.UpdatePlayerDto) on controller Learn.Players.PlayerAppService (Learn.Application).
+ERROR 2021-03-08 16:51:25,562 [4    ] Mvc.ExceptionHandling.AbpExceptionFilter - There is no such an entity. Entity type: Learn.Data.Models.Player, id: 2
+Abp.Domain.Entities.EntityNotFoundException: There is no such an entity. Entity type: Learn.Data.Models.Player, id: 2
+   at Abp.Domain.Repositories.AbpRepositoryBase`2.GetAsync(TPrimaryKey id)
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.InternalInterceptAsynchronous[TResult](IInvocation invocation)
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.InternalInterceptAsynchronous[TResult](IInvocation invocation)
+   at Abp.Auditing.AuditingInterceptor.InternalInterceptAsynchronous[TResult](IInvocation invocation)
+   at Abp.Runtime.Validation.Interception.ValidationInterceptor.InternalInterceptAsynchronous[TResult](IInvocation invocation)
+   at Abp.Application.Services.AsyncCrudAppService`8.UpdateAsync(TUpdateInput input)
+   at Abp.Domain.Uow.UnitOfWorkInterceptor.InternalInterceptAsynchronous[TResult](IInvocation invocation)
+   at Abp.Auditing.AuditingInterceptor.InternalInterceptAsynchronous[TResult](IInvocation invocation)
+   at Abp.Runtime.Validation.Interception.ValidationInterceptor.InternalInterceptAsynchronous[TResult](IInvocation invocation)
+   at lambda_method(Closure , Object )
+   at Microsoft.Extensions.Internal.ObjectMethodExecutorAwaitable.Awaiter.GetResult()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.AwaitableObjectResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+INFO  2021-03-08 16:51:26,086 [4    ] .Mvc.Infrastructure.ObjectResultExecutor - Executing ObjectResult, writing value of type 'Abp.Web.Models.AjaxResponse'.
+INFO  2021-03-08 16:51:26,096 [4    ] c.Infrastructure.ControllerActionInvoker - Executed action Learn.Players.PlayerAppService.UpdateAsync (Learn.Application) in 1486.7051ms
+INFO  2021-03-08 16:51:26,104 [4    ] ft.AspNetCore.Routing.EndpointMiddleware - Executed endpoint 'Learn.Players.PlayerAppService.UpdateAsync (Learn.Application)'
+INFO  2021-03-08 16:51:26,107 [4    ] Microsoft.AspNetCore.Hosting.Diagnostics - Request finished in 1571.0433ms 404 application/json; charset=utf-8
